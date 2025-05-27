@@ -69,11 +69,11 @@ const LeftNav = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="border border-gray-900 rounded-md px-2 py-1 outline-none"
+                className="border border-gray-900 rounded-md px-2  outline-none"
               />
 
               {/* Dropdown */}
-              <select className="border btn-disabled border-gray-900 text-gray-600 font-semibold rounded-md px-2 py-1 outline-none">
+              <select className="border btn-disabled border-gray-900 text-gray-600 font-semibold rounded-md px-2  outline-none">
                 <option className="">All Products</option>
               </select>
 

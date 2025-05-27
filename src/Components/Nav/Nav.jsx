@@ -1,6 +1,8 @@
 import "../../index.css";
 import { MdMenu } from "react-icons/md";
+import Marquee from "react-fast-marquee";
 import { NavLink } from "react-router-dom";
+import 'animate.css';
 
 const Nav = () => {
   const links = (
@@ -66,9 +68,13 @@ const Nav = () => {
       </div>
       <div>
         <div className=" bg-gray-800 text-white shadow-sm">
+          
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <MdMenu />
+             <MdMenu className="text-xl animate__shakeX animate__animated"/> <Marquee className="px-2 text-red-600">
+  Its no real life Dark web... Dark web is dark web no one will be able to copy it..
+</Marquee>
+              
             </div>
             <ul
               tabIndex={0}
