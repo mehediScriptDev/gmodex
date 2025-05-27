@@ -15,14 +15,14 @@ const Home = () => {
 
 
   return (
-    <section className="overflow-hidden">
+    <section className="">
       <Nav></Nav>
       <div className="grid grid-cols-12 gap-2 ">
         <div className="col-span-2 space-y-3">
           <LeftNav></LeftNav>
         </div>
 
-        <div className="col-span-8">
+        <div className="col-span-8 overflow-hidden">
           <Outlet></Outlet>
         </div>
 

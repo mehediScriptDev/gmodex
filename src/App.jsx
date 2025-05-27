@@ -15,7 +15,7 @@ function App() {
     <div className="w-11/12 mx-auto grid grid-cols-12 gap-2">
       <div className="col-span-12">
         <Home></Home>
-        <Outlet></Outlet>
+        
       </div>
       {/* <div className="col-span-2 grid grid-cols-1">
           <img className="border-2 border-gray-400 p-2" src={eyes} alt="eyesphoto" />
