@@ -44,6 +44,9 @@ const Nav = () => {
       </li>
     </>
   );
+  const oldModelModal = () =>{
+    document.getElementById('my_modal_1').showModal();
+  }
   return (
     <section className="">
       <div className="flex justify-between">
@@ -57,13 +60,37 @@ const Nav = () => {
              gap-2 font-semibold text-gray-400"
           >
             <li>
-              <a href="">My Account</a>
+              <a onClick={oldModelModal} className="cursor-pointer">My Account</a>
             </li>
             |
             <li>
-              <a href="">Help</a>
+              <a onClick={()=>document.getElementById('my_modal_2').showModal()} className="cursor-pointer" >Help</a>
             </li>
           </ul>
+          <dialog id="my_modal_1" className="modal">
+  <div className="modal-box bg-gray-900 border-2 border-gray-300 rounded-none">
+    <h3 className="font-bold text-2xl text-gray-300 text-center font-primaryHack">You're not one of us!</h3>
+    <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn btn-xs rounded-none font-primaryHack">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+          <dialog id="my_modal_2" className="modal">
+  <div className="modal-box bg-gray-900 border-2 border-gray-300 rounded-none">
+    <h3 className="font-bold text-2xl text-gray-300 text-center font-primaryHack">You're not one of us!</h3>
+    <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn btn-xs rounded-none font-primaryHack">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
         </div>
       </div>
       <div>

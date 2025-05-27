@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./Components/Home";
 import { useEffect, useState } from "react";
-import gif from './Images/loader.gif'
+import gif from './Images/mainloader.gif'
 
 
 function App() {
