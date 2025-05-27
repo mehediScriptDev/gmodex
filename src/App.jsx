@@ -12,8 +12,8 @@ function App() {
   },[])
   if(showgif){
     return (
-      <div className="flex max-h-screen bg-black py-10 justify-center items-center">
-      <img src={gif} alt="loader" className="py-10" />
+      <div className="flex h-screen bg-black py-10 justify-center items-center">
+      <img src={gif} alt="loader" className=" object-contain" />
     </div>
     )
   }
