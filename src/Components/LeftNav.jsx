@@ -73,8 +73,8 @@ const LeftNav = () => {
               />
 
               {/* Dropdown */}
-              <select className="border btn-disabled border-gray-900 text-gray-600 font-semibold rounded-md px-2  outline-none">
-                <option className="">All Products</option>
+              <select disabled className="border btn-disabled  border-gray-900 text-gray-600 font-semibold rounded-md px-2  outline-none">
+                <option className="bg-gray-900 text-gray-600">All </option>
               </select>
 
               {/* Search Button */}
