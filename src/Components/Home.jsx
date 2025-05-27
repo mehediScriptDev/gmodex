@@ -18,15 +18,15 @@ const Home = () => {
     <section className="">
       <Nav></Nav>
       <div className="grid grid-cols-12 gap-2 ">
-        <div className="col-span-2 space-y-3">
+        <div className="lg:col-span-2 hidden lg:block space-y-3">
           <LeftNav></LeftNav>
         </div>
 
-        <div className="col-span-8 overflow-hidden">
+        <div className="lg:col-span-8 col-span-12 overflow-hidden">
           <Outlet></Outlet>
         </div>
 
-        <div className="col-span-2">
+        <div className="lg:col-span-2 lg:block hidden">
           <img
             className="border-2 border-gray-400 p-2"
             src={eyes}
