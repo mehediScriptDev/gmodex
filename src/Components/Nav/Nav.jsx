@@ -78,7 +78,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className=" hidden lg:flex justify-around w-full items-center bg-gray-400 p-1">
-            <ul className="menu menu-horizontal lg:text-2xl font-bold px-1 flex justify-between items-center w-full bg-gray-900 text-white ">
+            <ul className="menu menu-horizontal lg:text-xl font-bold px-1 flex justify-between items-center w-full bg-gray-900 text-white ">
               {links}
             </ul>
           </div>

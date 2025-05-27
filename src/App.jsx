@@ -1,15 +1,7 @@
 import "./App.css";
 import Home from "./Components/Home";
-import murder from './Images/murder.gif'
-import joker from './Images/joker.gif'
-import eyes from './Images/scaryEyes.gif'
-import deadbody from './Images/bodyfall.gif'
-import movie from './Images/girlwatchingmovie.gif'
-import scarry from './Images/realscary.gif'
-import real from './Images/realbody.png'
-import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import gif from './Images/loading.gif'
+import gif from './Images/loader.gif'
 
 
 function App() {
@@ -18,10 +10,12 @@ function App() {
     const timer = setTimeout(()=>setGif(false),2000);
     return ()=> clearTimeout(timer);
   },[])
-  if(gif){
-    <div className="flex justify-center items-center">
-      <img src={showgif} alt="loader" className="h-full w-full" />
+  if(showgif){
+    return (
+      <div className="flex max-h-screen bg-black py-10 justify-center items-center">
+      <img src={gif} alt="loader" className="py-10" />
     </div>
+    )
   }
   return (
     <section>

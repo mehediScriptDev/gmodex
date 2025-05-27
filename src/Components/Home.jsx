@@ -3,10 +3,9 @@ import Nav from "./Nav/Nav";
 import murder from "../Images/murder.gif";
 import joker from "../Images/joker.gif";
 import eyes from "../Images/scaryEyes.gif";
-import deadbody from "../Images/bodyfall.gif";
 import movie from "../Images/girlwatchingmovie.gif";
 import scarry from "../Images/realscary.gif";
-import real from "../Images/realbody.png";
+import real from "../Images/horror.gif"
 import { Outlet } from "react-router-dom";
 import LeftNav from "./LeftNav";
 
