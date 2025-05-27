@@ -6,11 +6,21 @@ import gif from './Images/mainloader.gif'
 
 function App() {
   const [showgif,setGif] = useState(true);
+  const [pass, setPass] = useState('');
+ 
   useEffect(()=>{
-    const timer = setTimeout(()=>setGif(false),2000);
+    
+const timer = setTimeout(()=>setGif(false),2000);
     return ()=> clearTimeout(timer);
+    
+    
   },[])
-  if(showgif){
+ 
+
+  // varify
+ 
+
+   if(showgif){
     return (
       <div className="flex h-screen bg-black py-10 justify-center items-center">
       <img src={gif} alt="loader" className=" object-contain" />
