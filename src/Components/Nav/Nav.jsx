@@ -1,10 +1,10 @@
-import React from "react";
+import '../../index.css'
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   const links = (
     <>
-      <li>
+      <li className=''>
         <NavLink to={'/'}>Home</NavLink>
       </li>
       
@@ -21,23 +21,23 @@ const Nav = () => {
       </li>
      
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/crypto'}>Crypto</NavLink>
       </li>
     
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/shooter'}>Shooter</NavLink>
       </li>
      
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/hitter'}>Hitter</NavLink>
       </li>
    
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/kidappers'}>Kidnappers</NavLink>
       </li>
   
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to={'/Kedney'}>Kedney</NavLink>
       </li>
     </>
   );
@@ -65,8 +65,8 @@ const Nav = () => {
       </div>
       <div>
         <div className=" bg-base-100 shadow-sm">
-          <div className=" hidden lg:flex justify-around w-full items-center bg-gray-400">
-            <ul className="menu menu-horizontal lg:text-2xl font-bold px-1 flex justify-between items-center w-full bg-black text-white ">
+          <div className=" hidden lg:flex justify-around w-full items-center bg-gray-400 p-1">
+            <ul className="menu menu-horizontal lg:text-2xl font-bold px-1 flex justify-between items-center w-full bg-gray-900 text-white ">
               {links}
             </ul>
           </div>
