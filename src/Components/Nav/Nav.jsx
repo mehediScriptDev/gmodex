@@ -60,11 +60,11 @@ const Nav = () => {
              gap-2 font-semibold text-gray-400"
           >
             <li>
-              <a onClick={oldModelModal} className="cursor-pointer">My Account</a>
+              <a onClick={oldModelModal} className="cursor-pointer font-genuine">My Account</a>
             </li>
             |
             <li>
-              <a onClick={()=>document.getElementById('my_modal_2').showModal()} className="cursor-pointer" >Help</a>
+              <a onClick={()=>document.getElementById('my_modal_2').showModal()} className="cursor-pointer font-genuine" >Help</a>
             </li>
           </ul>
           <dialog id="my_modal_1" className="modal">
@@ -111,7 +111,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className=" hidden lg:flex justify-around w-full items-center bg-gray-400 p-1">
-            <ul className="menu menu-horizontal lg:text-xl font-bold px-1 flex justify-between items-center w-full bg-gray-900 text-white ">
+            <ul className="menu menu-horizontal lg:text-xl font-bold px-1 flex justify-between items-center w-full bg-gray-900 text-white font-genuine">
               {links}
             </ul>
           </div>

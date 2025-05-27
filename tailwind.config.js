@@ -11,6 +11,7 @@ export default {
         inconsolata: ['Inconsolata', 'monospace'],
         boldHack: ['"Press Start 2P"', 'cursive'],
         primaryHack: ['VT323', 'monospace'],
+        genuine: "Share Tech Mono",
       },
     },
   },

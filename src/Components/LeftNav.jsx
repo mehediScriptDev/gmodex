@@ -57,7 +57,7 @@ const LeftNav = () => {
     </>
   );
     return (
-        <div className="space-y-2 ">
+        <div className="space-y-2 *:font-genuine">
             <div className="w-full mx-auto mt-2  rounded-md border-2 border-gray-900 ">
             {/* Header */}
             <div className="bg-gray-900 rounded-t-md py-1 text-center text-white font-bold ">

@@ -123,7 +123,7 @@ const Girls = () => {
     <div>
       <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold">Featured Videos</h2>
+          <h2 className="text-lg font-bold font-genuine">Featured Videos</h2>
           <a href="#" className="text-blue-600 text-xs hover:underline">
             See More Videos
           </a>
@@ -136,10 +136,10 @@ const Girls = () => {
               className="w-[120px] h-[90px] object-cover"
             />
             <div>
-              <h3 className="text-blue-700 font-semibold hover:underline cursor-pointer">
+              <h3 className="text-blue-700 font-genuine font-semibold hover:underline cursor-pointer">
                 {video.title}
               </h3>
-              <p className="text-gray-600">{video.description}</p>
+              <p className="text-gray-600 ">{video.description}</p>
               <div className="flex flex-wrap gap-1 mt-1 text-xs">
                 {video.tags.map((tag, index) => (
                   <a
