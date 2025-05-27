@@ -1,26 +1,61 @@
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const LeftNav = () => {
     const categories = [
-    "All",
-    "Action",
-    "Fighting",
-    "Music & Party",
-    "Puzzle & Cards",
-    "Role-Playing",
-    "Shooter",
+    "Everyone",
+    "Everyone 10+",
+    "Teen",
+    "Mature",
+    "Abuse",
+    "Playing",
+    "Shooting",
     "Simulation",
-    "Sports",
     "Strategy",
   ];
     const extras = [
-    "$19.99 & Under",
-    "Accessories",
-    "Price Drops",
-    "Strategy Guides",
-    "Systems",
-    "Used Games",
+    "$70 start",
+    "Guns",
+    "Knifes",
+    "Book",
+    "Movies",
+    "Games",
   ];
+    const links = (
+    <>
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/guns"}>Guns</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/drugs"}>Drugs</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/girls"}>Girls</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/crypto"}>Crypto</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/shooter"}>Shooter</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/hitter"}>Hitter</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/kidappers"}>Kidnappers</Link>
+      </li>
+
+      <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
+        <Link to={"/Kedney"}>Kedney</Link>
+      </li>
+    </>
+  );
     return (
         <div className="space-y-2 ">
             <div className="w-full mx-auto mt-2  rounded-md border-2 border-gray-900 ">
@@ -54,27 +89,23 @@ const LeftNav = () => {
           <div className="w-full mx-auto bg-white border-2 border-gray-900  rounded-md overflow-hidden ">
             <div className="flex items-center justify-center gap-1 bg-gray-900 text-white px-3">
               <span className="bg-gray-900 rounded-t-md py-1 text-center text-white font-bold">
-                Category
+                Explore
               </span>
             </div>
             <ul className="divide-y divide-gray-200 text-gray-600 font-semibold">
-              {categories.map((item) => (
+              {/* {categories.map((item) => (
                 <li
                   key={item}
                   className="hover:bg-gray-100 cursor-pointer px-4 py-2"
                 >
                   {item}
                 </li>
-              ))}
+              ))} */}
+              <li className="hover:bg-gray-100 cursor-pointer px-4 py-2"><a target="_blank" href="https://watchpeopledie.tv/">Watch people die</a></li>
+              
+              {links}
               <li className="border-t border-gray-300 my-1" />
-              {extras.map((item) => (
-                <li
-                  key={item}
-                  className="hover:bg-gray-100 cursor-pointer px-4 py-2"
-                >
-                  {item}
-                </li>
-              ))}
+              
             </ul>
           </div>
         </div>

@@ -8,11 +8,24 @@ import movie from './Images/girlwatchingmovie.gif'
 import scarry from './Images/realscary.gif'
 import real from './Images/realbody.png'
 import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import gif from './Images/loading.gif'
 
 
 function App() {
+  const [showgif,setGif] = useState(true);
+  useEffect(()=>{
+    const timer = setTimeout(()=>setGif(false),2000);
+    return ()=> clearTimeout(timer);
+  },[])
+  if(gif){
+    <div className="flex justify-center items-center">
+      <img src={showgif} alt="loader" className="h-full w-full" />
+    </div>
+  }
   return (
-    <div className="w-11/12 mx-auto grid grid-cols-12 gap-2">
+    <section>
+      <div className="w-11/12 mx-auto grid grid-cols-12 gap-2">
       <div className="col-span-12">
         <Home></Home>
         
@@ -27,6 +40,7 @@ function App() {
           <img className="border-2 border-gray-400 p-2" src={murder} alt="eyesphoto" />
       </div> */}
     </div>
+    </section>
   );
 }
 
