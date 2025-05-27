@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./Components/Home";
 import { useEffect, useState } from "react";
 import gif from "./Images/mainloader.gif";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [showgif, setGif] = useState(true);
@@ -35,6 +36,7 @@ function App() {
           <img className="border-2 border-gray-400 p-2" src={murder} alt="eyesphoto" />
       </div> */}
       </div>
+      <Footer></Footer>
     </section>
   );
 }

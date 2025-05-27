@@ -81,7 +81,7 @@ const Nav = () => {
 </dialog>
           <dialog id="my_modal_2" className="modal">
   <div className="modal-box bg-gray-900 border-2 border-gray-300 rounded-none">
-    <h3 className="font-bold text-2xl text-gray-300 text-center font-primaryHack">You're not one of us!</h3>
+    <h3 className="font-bold text-2xl text-red-600 text-center font-primaryHack">You're not one of us!</h3>
     <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p>
     <div className="modal-action">
       <form method="dialog">
