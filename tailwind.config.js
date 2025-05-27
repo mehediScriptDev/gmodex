@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primaryfont: ['"IBM Plex Mono"', 'monospace'],
+        inconsolata: ['Inconsolata', 'monospace'],
+        boldHack: ['"Press Start 2P"', 'cursive'],
+        primaryHack: ['VT323', 'monospace'],
+      },
+    },
   },
    plugins: [
     require('daisyui'),
