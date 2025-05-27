@@ -7,15 +7,17 @@ import deadbody from './Images/bodyfall.gif'
 import movie from './Images/girlwatchingmovie.gif'
 import scarry from './Images/realscary.gif'
 import real from './Images/realbody.png'
+import { Outlet } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="w-11/12 mx-auto grid grid-cols-12 gap-2">
-      <div className="col-span-10">
+      <div className="col-span-12">
         <Home></Home>
+        <Outlet></Outlet>
       </div>
-      <div className="col-span-2 grid grid-cols-1">
+      {/* <div className="col-span-2 grid grid-cols-1">
           <img className="border-2 border-gray-400 p-2" src={eyes} alt="eyesphoto" />
           <img className="border-2 border-gray-400 p-2" src={real} alt="eyesphoto" />
           <img className="border-2 border-gray-400 p-2" src={scarry} alt="eyesphoto" />
@@ -23,7 +25,7 @@ function App() {
           
           <img className="border-2 border-gray-400 p-2" src={movie} alt="eyesphoto" />
           <img className="border-2 border-gray-400 p-2" src={murder} alt="eyesphoto" />
-      </div>
+      </div> */}
     </div>
   );
 }
