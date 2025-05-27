@@ -42,7 +42,7 @@ const Nav = () => {
     </>
   );
   return (
-    <section>
+    <section className=''>
       <div className="flex justify-between">
         <div className="join text-3xl font-boldHack mt-1 font-extrabold">
           <span className="text-red-600 font-extrabold join-item">g</span>
