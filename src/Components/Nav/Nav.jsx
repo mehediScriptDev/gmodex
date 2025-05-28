@@ -96,8 +96,8 @@ const Nav = () => {
       <div>
         <div className=" bg-gray-800 text-white shadow-sm">
           
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div className="dropdown rounded-none">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden rounded-none">
              <MdMenu className="text-xl animate__shakeX animate__animated"/> <Marquee className="px-2 text-red-600">
   Its no real life Dark web... Dark web is dark web no one will be able to copy it..
 </Marquee>
@@ -105,7 +105,7 @@ const Nav = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-gray-800 text-white rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content rounded-none bg-gray-800 text-white  z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>

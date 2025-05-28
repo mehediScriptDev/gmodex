@@ -21,7 +21,7 @@ const Home = () => {
           <LeftNav></LeftNav>
         </aside>
 
-        <div className="lg:col-span-8 col-span-12 overflow-hidden">
+        <div className="lg:col-span-8 col-span-12  overflow-hidden">
           <Outlet></Outlet>
         </div>
 
