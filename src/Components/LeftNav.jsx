@@ -52,7 +52,7 @@ const LeftNav = () => {
       </li>
 
       <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
-        <Link to={"/Kedney"}>Kedney</Link>
+        <Link to={"/organs"}>Organs</Link>
       </li>
     </>
   );

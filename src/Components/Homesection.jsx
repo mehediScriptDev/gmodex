@@ -1,23 +1,18 @@
-import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const Homesection = () => {
   const featuredCard = [
     {
-      category: "Premium",
+      category: "Eclipse",
       thumbnail:
-        "https://t3.ftcdn.net/jpg/03/51/93/78/360_F_351937870_LpVA7EKOq17kBeKdhXXRVNJjWtksRQ8c.jpg",
+        "https://64.media.tumblr.com/d4a8305d1ea38e0010a4dac0d4b0f25e/tumblr_oq9bdk4ZQb1vpejtho1_500.jpg",
     },
     {
-      category: "Premium",
+      category: "Phantom",
 
       thumbnail:
-        "https://i.ytimg.com/vi/nRT8XDGbjpk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDy8PXrfhUczqsSr3xodkIMBNPt5A",
-    },
-    {
-      category: "Premium",
-
-      thumbnail:
-        "https://st2.depositphotos.com/1040130/8817/i/450/depositphotos_88173646-stock-photo-concept-model-posing-as-victim.jpg",
+        "https://whitesandstreatment.com/wp-content/uploads/2017/01/most-addictive-drugs-1.jpg",
     },
     {
       category: "Premium",
@@ -25,6 +20,13 @@ const Homesection = () => {
       thumbnail:
         "https://media.gettyimages.com/id/626573838/video/kidnapped-woman.jpg?s=640x640&k=20&c=r0JxORsf7jwOHbL95pNZ3pgfkGUjGtasb0KIeAF4rys=",
     },
+    {
+      category: "Elite",
+
+      thumbnail:
+        "https://i.ytimg.com/vi/nRT8XDGbjpk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDy8PXrfhUczqsSr3xodkIMBNPt5A",
+    },
+    
   ];
   return (
     <section>
@@ -46,40 +48,25 @@ const Homesection = () => {
         ))}
       </div>
       {/* tab section for home */}
-      <div className="my-7 border p-1 border-gray-800">
+      <div className="my-7 p-2 *:font-genuine text-gray-600 font-semibold">
         {/* name of each tab group should be unique */}
-        <div className="tabs tabs-lift rounded-none ">
-          <input
-            type="radio"
-            name="my_tabs_3"
-            className="tab"
-            aria-label="Tab 1"
-          />
-          <div className="tab-content bg-base-100 border-base-300 p-6">
-            Tab content 1
-          </div>
+       <Tabs>
+    <TabList>
+      <Tab>Title 1</Tab>
+      <Tab>Title 2</Tab>
+      <Tab>Title 3</Tab>
+    </TabList>
 
-          <input
-            type="radio"
-            name="my_tabs_3"
-            className="tab"
-            aria-label="Tab 2"
-            defaultChecked
-          />
-          <div className="tab-content bg-base-100 border-base-300 p-6">
-            Tab content 2
-          </div>
-
-          <input
-            type="radio"
-            name="my_tabs_3"
-            className="tab"
-            aria-label="Tab 3"
-          />
-          <div className="tab-content bg-base-100 border-base-300 p-6">
-            Tab content 3
-          </div>
-        </div>
+    <TabPanel>
+      <h2>Any content 1</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Any content 2</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Any content 3</h2>
+    </TabPanel>
+  </Tabs>
       </div>
     </section>
   );
