@@ -133,10 +133,10 @@ const Girls = () => {
             <img
               src={video.thumbnail}
               alt={video.title}
-              className="w-[120px] h-[90px] object-cover"
+              className="w-[120px] h-[90px] lg:h-[110px] object-cover"
             />
             <div>
-              <h3 className="text-blue-700 font-genuine font-semibold hover:underline cursor-pointer">
+              <h3 className="text-blue-700 font-genuine font-semibold underline cursor-pointer">
                 {video.title}
               </h3>
               <p className="text-gray-600 ">{video.description}</p>
