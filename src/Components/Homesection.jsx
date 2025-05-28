@@ -37,7 +37,7 @@ const Homesection = () => {
         "Your best friend. Most selling thing. Just try it. No one can beat this.",
       tags: ["headLover", "RealPlayer"],
       uploader: "Garban",
-      uploaded: "21 hours ago",
+      uploaded: "300$",
       category: "Eclipse",
       views: "1,00,719",
       rating: 3,
@@ -52,7 +52,7 @@ const Homesection = () => {
         "You no have to waste money on real btc..This is best selling item",
       tags: ["torture", "btc", "trade", "crypto", "millionare", "future"],
       uploader: "cryptoKing",
-      uploaded: "1 month ago",
+      uploaded: "40k",
       category: "rare",
       views: "36,000",
       rating: 4,
@@ -66,7 +66,7 @@ const Homesection = () => {
       description: "This will be a great for your power. Market/power..",
       tags: ["bioChemi", "boooo", "vanish"],
       uploader: "Dr Vegapunk",
-      uploaded: "1 month ago",
+      uploaded: "5000$",
       category: "exxplottion",
       views: "79,600",
       rating: 5,
@@ -80,7 +80,7 @@ const Homesection = () => {
       description: "This is short n heavy thing. You know what it can do.",
       tags: ["littlePig", "LittleKing"],
       uploader: "themackShoott",
-      uploaded: "1 month ago",
+      uploaded: "100$",
       category: "gan",
       views: "80,602",
       rating: 5,
@@ -94,7 +94,7 @@ const Homesection = () => {
       description: "Replace your eye into high quality camera.",
       tags: ["littleMonster", "Ghoost", "cam", "eyecam", "HiddenCam"],
       uploader: "tishatalker",
-      uploaded: "1 month ago",
+      uploaded: "500$",
       category: "cam",
       views: "10,602",
       rating: 2,
@@ -159,7 +159,7 @@ const Homesection = () => {
                       ))}
                     </div>
                     <div className="text-xs text-gray-500 mt-1">
-                      Added: {video.uploaded} in Category:{" "}
+                      Price: {video.uploaded}  Category:{" "}
                       <span className="text-gray-700">{video.category}</span>
                     </div>
                     <div className="text-xs text-gray-500">
