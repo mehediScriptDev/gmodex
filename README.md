@@ -1,12 +1,5 @@
-# React + Vite
+🕸️ Understanding the Dark Web — Educational Project
+📘 Overview
+This project is created to educate and inform users about how the Dark Web functions. It demonstrates the underlying technologies, tools, and architecture that power hidden services on the internet — with a strict focus on cybersecurity awareness, privacy education, and research purposes only.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚠️ Disclaimer: This project does not promote or facilitate any illegal activity. It is strictly for educational purposes to understand the technology behind anonymity networks such as Tor.
