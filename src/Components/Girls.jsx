@@ -124,7 +124,7 @@ const Girls = () => {
       <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold font-genuine">Featured Videos</h2>
-          <a href="#" className="text-blue-600 text-xs hover:underline">
+          <a href="#" className="text-blue-600 text-xs underline">
             See More Videos
           </a>
         </div>
