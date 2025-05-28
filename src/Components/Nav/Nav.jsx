@@ -98,8 +98,8 @@ const Nav = () => {
           
           <div className="dropdown rounded-none">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden rounded-none">
-             <MdMenu className="text-xl animate__shakeX animate__animated"/> <Marquee className="px-2 text-red-600">
-  Its no real life Dark web... Dark web is dark web no one will be able to copy it..
+             <MdMenu className="text-xl animate__shakeX animate__animated"/> <Marquee className="px-2 font-genuine text-red-600">
+  Its no real life Dark web... Dark web is dark web no one will be able to copy it..The dark web isnt a myth, it’s a digital shadow market where lives, identities, and safety are traded like currency. Be aware. Stay safe."
 </Marquee>
               
             </div>

@@ -15,10 +15,10 @@ const Homesection = () => {
         "https://whitesandstreatment.com/wp-content/uploads/2017/01/most-addictive-drugs-1.jpg",
     },
     {
-      category: "Premium",
+      category: "Dust",
 
       thumbnail:
-        "https://media.gettyimages.com/id/626573838/video/kidnapped-woman.jpg?s=640x640&k=20&c=r0JxORsf7jwOHbL95pNZ3pgfkGUjGtasb0KIeAF4rys=",
+        "https://inc42.com/cdn-cgi/image/quality=75/https://asset.inc42.com/2021/05/indmoney-crypto-featured-1.jpg",
     },
     {
       category: "Elite",
@@ -30,7 +30,7 @@ const Homesection = () => {
   ];
   return (
     <section>
-      <h1 className="font-redblood text-center pt-3 text-2xl lg:text-4xl text-red-800">
+      <h1 className="font-redblood text-center pt-3 text-2xl sm:text-4xl lg:text-4xl text-red-800">
         global Manifest of Dark EXistence
       </h1>
       <div className="grid gap-1 mt-3 justify-items-center grid-cols-4">
@@ -52,7 +52,7 @@ const Homesection = () => {
         {/* name of each tab group should be unique */}
        <Tabs>
     <TabList>
-      <Tab>Title 1</Tab>
+      <Tab>Featured</Tab>
       <Tab>Title 2</Tab>
       <Tab>Title 3</Tab>
     </TabList>

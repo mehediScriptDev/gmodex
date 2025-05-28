@@ -17,15 +17,15 @@ const Home = () => {
     <section className="">
       <Nav></Nav>
       <div className="grid grid-cols-12 gap-2 ">
-        <aside className="lg:col-span-2 hidden lg:block space-y-3">
+        <aside className="lg:col-span-2 sm:col-span-2 sm:block hidden lg:block space-y-3">
           <LeftNav></LeftNav>
         </aside>
 
-        <div className="lg:col-span-8 col-span-12  overflow-hidden">
+        <div className="lg:col-span-8 col-span-12 sm:col-span-8  overflow-hidden">
           <Outlet></Outlet>
         </div>
 
-        <aside className="lg:col-span-2 lg:block hidden">
+        <aside className="lg:col-span-2 sm:block sm:col-span-2 lg:block hidden">
           <img
             className="border-2 border-gray-400 p-2"
             src={eyes}
