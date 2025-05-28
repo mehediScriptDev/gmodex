@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 .active{
-    background: red;
+    background: #991B1B;
     border-radius: 0%;
     -webkit-border-radius: 0%;
     -moz-border-radius: 0%;

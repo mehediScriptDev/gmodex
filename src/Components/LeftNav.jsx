@@ -79,7 +79,7 @@ const LeftNav = () => {
 
               {/* Search Button */}
               <div className="flex justify-center items-center">
-                <button className="shadow-lg bg-red-600 rounded-full btn btn-xs hover:bg-red-700 text-white font-bold py-1  tracking-widest">
+                <button className="shadow-lg bg-red-800 rounded-full btn btn-xs hover:bg-red-700 text-white font-bold py-1  tracking-widest">
                   <IoMdArrowDropleft /> SEARCH <IoMdArrowDropright />
                 </button>
               </div>
