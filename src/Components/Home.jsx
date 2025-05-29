@@ -29,33 +29,33 @@ const Home = () => {
           <img
             className="border-2 border-gray-400 p-2"
             src={eyes}
-            alt="eyesphoto"
+            alt="eyes"
           />
           <img
             className="border-2 border-gray-400 p-2"
             src={real}
-            alt="eyesphoto"
+            alt="nun"
           />
           <img
             className="border-2 border-gray-400 p-2"
             src={scarry}
-            alt="eyesphoto"
+            alt="joker"
           />
           <img
             className="border-2 border-gray-400 p-2"
             src={joker}
-            alt="eyesphoto"
+            alt="joker2"
           />
 
           <img
             className="border-2 border-gray-400 p-2"
             src={movie}
-            alt="eyesphoto"
+            alt="lady"
           />
           <img
             className="border-2 border-gray-400 p-2"
             src={murder}
-            alt="eyesphoto"
+            alt="zombie"
           />
         </aside>
       </div>

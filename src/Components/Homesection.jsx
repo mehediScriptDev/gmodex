@@ -103,6 +103,11 @@ const Homesection = () => {
         "https://www.vice.com/wp-content/uploads/sites/2/2017/06/1497290204105-eyecam_40.jpeg",
     },
   ];
+
+  const lastModal = e =>{
+    e.target.reset();
+    document.getElementById('my_modal_22').showModal();
+  }
   return (
     <section>
       <h1 className="font-redblood text-center pt-3 text-2xl sm:text-4xl lg:text-4xl text-red-800">
@@ -115,7 +120,7 @@ const Homesection = () => {
             onClick={()=>document.getElementById('my_modal_5').showModal()}
               src={card.thumbnail}
               className="w-[120px] lg:w-[150px] h-[70px] lg:h-[150px] object-cover"
-              alt="girlPhot"
+              alt='Category'
             />
             <p className="text-center lg:text-xl text-xs font-terminalfont">
               {card.category}
@@ -198,23 +203,35 @@ const Homesection = () => {
 
       <dialog id="my_modal_5" className="modal modal-middle sm:modal-middle">
         <div className="modal-box p-0 rounded-none border-2 border-white bg-gray-900">
-          <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">USER LOGIN</h3>
+          <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF</h3>
           <div className="space-y-2 flex justify-center items-center flex-col mt-4">
             <div>
               <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
             </div>
             <p className=" rounded-none font-terminalfont text-gray-700 border-gray-600 border-2 bg-gray-300 text-sm w-8/12 text-left px-1">USER</p>
-          <input type="password" className="placeholder-gray-700 border-white border-2 w-8/12 mx-auto bg-gray-400 font-terminalfont text-sm px-2" placeholder=" TYPE PASSWORD HERE" id="" />
+          <input type="password" required className="placeholder-gray-700 border-white border-2 w-8/12 mx-auto bg-gray-400 font-terminalfont text-sm px-2" placeholder=" TYPE PASSWORD HERE" id="" />
           </div>
           
           <div className="modal-action mt-0 py-2  flex justify-center items-center">
-            <form className="" method="dialog">
+            <form onSubmit={lastModal} method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <div ><button className="btn btn-xs font-terminalfont rounded-none px-10 bg-red-600 text-white">LOGIN</button></div>
             </form>
           </div>
         </div>
       </dialog>
+      <dialog id="my_modal_22" className="modal">
+  <div className="modal-box bg-gray-900 border-2 border-gray-300 rounded-none">
+    <h3 className="font-bold text-2xl text-red-600 text-center font-primaryHack">No match!</h3>
+    {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn btn-xs rounded-none font-primaryHack">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </section>
   );
 };

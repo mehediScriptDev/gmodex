@@ -1,4 +1,4 @@
-import React from "react";
+import gif from "../Images/loaderjoker.gif"
 
 const Girls = () => {
   const videos = [
@@ -119,12 +119,17 @@ const Girls = () => {
         "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/08/18/female-abuse.jpg",
     },
   ];
+   const lastModal = e =>{
+    e.target.reset();
+    
+    document.getElementById('my_modal_22').showModal();
+  }
   return (
     <div>
       <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold font-genuine">Featured Videos</h2>
-          <a href="#" className="text-blue-600 text-xs underline">
+          <h2 className="text-lg font-bold  font-genuine">Featured Videos</h2>
+          <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-600 cursor-pointer text-xs underline">
             See More Videos
           </a>
         </div>
@@ -136,7 +141,7 @@ const Girls = () => {
               className="w-[120px] h-[90px] lg:h-[110px] object-cover"
             />
             <div>
-              <h3 className="text-blue-700 font-genuine font-semibold underline cursor-pointer">
+              <h3 onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-700 font-genuine font-semibold underline cursor-pointer">
                 {video.title}
               </h3>
               <p className="text-gray-600 ">{video.description}</p>
@@ -171,6 +176,37 @@ const Girls = () => {
           </div>
         ))}
       </div>
+      <dialog id="my_modal_5" className="modal modal-middle sm:modal-middle">
+              <div className="modal-box p-0 rounded-none border-2 border-white bg-gray-900">
+                <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF</h3>
+                <div className="space-y-2 flex justify-center items-center flex-col mt-4">
+                  <div>
+                    <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
+                  </div>
+                  <p className=" rounded-none font-terminalfont text-gray-700 border-gray-600 border-2 bg-gray-300 text-sm w-8/12 text-left px-1">USER</p>
+                <input type="password"  required className="placeholder-gray-700 border-white border-2 w-8/12 mx-auto bg-gray-400 font-terminalfont text-sm px-2" placeholder=" TYPE PASSWORD HERE" id="" />
+                </div>
+                
+                <div className="modal-action mt-0 py-2  flex justify-center items-center">
+                  <form onSubmit={lastModal} method="dialog">
+                    {/* if there is a button in form, it will close the modal */}
+                    <div ><button className="btn btn-xs font-terminalfont rounded-none px-10 bg-red-600 text-white">LOGIN</button></div>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <dialog id="my_modal_22" className="modal">
+        <div className="modal-box bg-gray-900 border-2 border-gray-300 rounded-none">
+          <h3 className="font-bold text-2xl text-red-600 text-center font-primaryHack">No match!</h3>
+          {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn btn-xs rounded-none font-primaryHack">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };
