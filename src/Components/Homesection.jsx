@@ -216,7 +216,7 @@ const Homesection = () => {
               <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
             </div>
             <p className=" rounded-none font-terminalfont text-gray-700 border-gray-700 border-2  text-sm w-8/12 text-center px-1">USER LOGIN</p>
-          <input type="password" required name="pass" className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSCODE HERE" id="" />
+          <input onChange={(e)=>setSecondpass(e.target.value)} type="password" required name="pass" className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSCODE HERE" id="" />
           </div>
           
           <div className="modal-action mt-0 py-2  flex justify-center items-center">
