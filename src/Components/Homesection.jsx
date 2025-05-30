@@ -120,6 +120,161 @@ const Homesection = () => {
     e.preventDefault();
     document.getElementById("my_modal_22").close();
   };
+
+  const topRated = [
+    
+    {
+      title: "BTC - (000.3)",
+     
+      description:
+        "Buy your crypto now.",
+      tags: ["btc", "Bitcoin", "cryptoking"],
+      uploader: "cryptoking",
+      
+    
+      views: "1000$",
+      rating: 5,
+      ratingsCount: 930,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMDFCmGplhzhzVGNTwpTtRgLGoVOBN1YRRzQ&s",
+    },
+    {
+      title: "100gm life",
+     
+      description:
+        "Buy your best oxygen/",
+      tags: ["coc", "hero", "cocaaaiiinn"],
+      uploader: "Yo Rigi",
+      
+    
+      views: "100$",
+      rating: 5,
+      ratingsCount: 9000,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbXpYLmzgE536jLkcn9EZFPGgQkPrPd8BlGA&s",
+    },
+    {
+      title: "Anti-drone gun",
+     
+      description:
+        "Dont have to affraid bout drone.",
+      tags: ["dronehunter", "drone", "realhunter"],
+      uploader: "collbapat",
+      
+    
+      views: "440$",
+      rating: 5,
+      ratingsCount: 906,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNaOSXcZkeEuZFgmcfcOBdh4sbNINj8gwRQQ&s",
+    },
+   
+    {
+      title: "Drone",
+     
+      description:
+        "Best choice for you",
+      tags: ["drone", "BigSizeDrone", "DroneGun"],
+      uploader: "Collbapat",
+      
+    
+      views: "700$",
+      rating: 5,
+      ratingsCount: 760,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8-XDiDnHFP0IWRtluehyHOMO1ER4orVXcmpxeqylsi6y4qGOd8dhWLBotkAdKOQhROlM&usqp=CAU",
+    },
+    {
+      title: "SIG SAUER P365",
+     
+      description:
+        "Don’t just carry. Carry confidence with the Sig P365.",
+      tags: ["Littlehit", "MostChoice", "Topseller"],
+      uploader: "Patricaia",
+      
+    
+      views: "80$",
+      rating: 4.5,
+      ratingsCount: 875,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuyby877r2RGe2G-3Hi_5fYEzHPeKbWJtOPQ&s",
+    },
+    {
+      title: "Bluster",
+     
+      description:
+        "Best thing for your work. Area: 2km",
+      tags: ["Boo", "Babye", "moonshot"],
+      uploader: "rouby",
+      
+    
+      views: "100$",
+      rating: 5,
+      ratingsCount: 333,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YEm1JdXa27LUIlXdiP2ZMuYUNCaQ5BWqVQ&s",
+    },
+    {
+      title: "Rappey Virus",
+     
+      description:
+        "Not selly things. Real product.",
+      tags: ["virus", "deadii", "dangerous"],
+      uploader: "dr tesla",
+      
+    
+      views: "1000$",
+      rating: 5,
+      ratingsCount: 103,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmg7sbSTwao9wnhxWXCWdvgJh63YJdNGJ0FaIn0pxRREaWkxdbT5yjUsFo3mV9fMbxkk&usqp=CAU",
+    },
+     {
+      title: "The Satanic Rituals",
+     
+      description:
+        "Satanic rituals book. Try it and see what happen",
+      tags: ["HailSaytan", "SatanicBible", "777"],
+      uploader: "Emilia",
+      
+    
+      views: "10$",
+      rating: 5,
+      ratingsCount: 903,
+      thumbnail:
+        "https://burnsiderarebooks.cdn.bibliopolis.com/pictures/140945112.jpg?auto=webp&v=1686348388",
+    },
+    {
+      title: "The Satanic Bible",
+     
+      description:
+        "The real satanic bible. buy now",
+      tags: ["HailSaytan", "Bible", "666"],
+      uploader: "Emilia",
+      
+    
+      views: "10$",
+      rating: 5,
+      ratingsCount: 997,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAUB2mU1n_Vg3u8sohG9R5_nPHOhSzp8opO25qf5Krt1UjoSPjip7Go5khehT0VniPfzo&usqp=CAU",
+    },
+    {
+      title: "The Satanic Bible",
+     
+      description:
+        "The real satanic bible. buy now",
+      tags: ["HailSaytan", "Bible", "666"],
+      uploader: "Emilia",
+      
+    
+      views: "10$",
+      rating: 5,
+      ratingsCount: 997,
+      thumbnail:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1435430607i/82333.jpg",
+    },
+  ]
   return (
     <section>
       <h1 className="font-redblood text-center pt-3 text-2xl sm:text-4xl lg:text-4xl text-red-800">
@@ -146,8 +301,8 @@ const Homesection = () => {
         <Tabs>
           <TabList>
             <Tab>Featured</Tab>
-            <Tab>Title 2</Tab>
-            <Tab>Title 3</Tab>
+            <Tab>Top Rated</Tab>
+            <Tab>Premium</Tab>
           </TabList>
 
           <TabPanel>
@@ -214,7 +369,67 @@ const Homesection = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <div>
+              {topRated.map((video, idx) => (
+                <div key={idx} className="flex gap-4 border-t py-4">
+                  <img
+                    src={video.thumbnail}
+                    alt={video.title}
+                    className="w-[120px] h-[90px] lg:h-[110px] object-cover"
+                  />
+                  <div>
+                    <h3
+                      onClick={() =>
+                        document.getElementById("my_modal_5").showModal()
+                      }
+                      className="text-blue-700 font-genuine font-semibold underline cursor-pointer"
+                    >
+                      {video.title}
+                    </h3>
+                    <p className="text-gray-600">{video.description}</p>
+                    <div className="flex flex-wrap gap-1 mt-1 text-xs">
+                      {video.tags.map((tag, index) => (
+                        <a
+                          key={index}
+                          href="#"
+                          className="text-blue-600 hover:underline"
+                        >
+                          {tag}
+                        </a>
+                      ))}
+                    </div>
+                    <div className="text-xs text-gray-500 mt-1">
+                      
+                      <span className="text-gray-700">{video.category}</span>
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      By:{" "}
+                      <span className="text-black font-medium">
+                        {video.uploader}
+                      </span>{" "}
+                      | Price: {video.views}
+                    </div>
+                    <div className="flex items-center gap-1 text-red-500 mt-1">
+                      {"★".repeat(video.rating)}
+                      {"☆".repeat(5 - video.rating)}
+                      <span className="text-black text-xs ml-2">
+                        {video.ratingsCount} ratings
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="flex justify-end pr-5">
+                <a
+                  onClick={() =>
+                    document.getElementById("my_modal_5").showModal()
+                  }
+                  className="text-blue-600 text-xs cursor-pointer underline"
+                >
+                  See More Items
+                </a>
+              </div>
+            </div>
           </TabPanel>
           <TabPanel>
             <h2>Any content 3</h2>
