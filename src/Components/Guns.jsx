@@ -218,20 +218,20 @@ const Guns = () => {
                 >
                   {video.title}
                 </h3>
-                <p className="text-gray-600 ">{video.description}</p>
+                <p className="text-gray-600 font-genuine">{video.description}</p>
                 <div className="flex flex-wrap gap-1 mt-1 text-xs">
                   {video.tags.map((tag, index) => (
                     <a
                       key={index}
                       href="#"
-                      className="text-blue-600 hover:underline"
+                      className="text-blue-600  hover:underline"
                     >
                       {tag}
                     </a>
                   ))}
                 </div>
                
-                <div className="text-xs text-gray-500">
+                <div className="text-xs text-gray-500 font-oldstylefont">
                   By:{" "}
                   <span className="text-black font-medium">
                     {video.uploader}
