@@ -1,9 +1,8 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import gif from "../Images/loaderjoker.gif"
+import gif from "../Images/loaderjoker.gif";
 import { useState } from "react";
-import cross from "../Images/cross.png"
-
+import cross from "../Images/cross.png";
 
 const Homesection = () => {
   const featuredCard = [
@@ -105,22 +104,22 @@ const Homesection = () => {
         "https://www.vice.com/wp-content/uploads/sites/2/2017/06/1497290204105-eyecam_40.jpeg",
     },
   ];
-  const [secondpass,setSecondpass] = useState('');
+  const [secondpass, setSecondpass] = useState("");
 
-  const lastModal = e =>{
+  const lastModal = (e) => {
     e.preventDefault();
-    
+
     const pass = e.target.pass.value;
     setSecondpass(pass);
-    document.getElementById('my_modal_22').showModal();
-    document.getElementById('my_modal_5').close();
+    document.getElementById("my_modal_22").showModal();
+    document.getElementById("my_modal_5").close();
     e.target.reset();
     // document.getElementById('my_modal_22').close()
-  }
-  const submitlastModal = e =>{
+  };
+  const submitlastModal = (e) => {
     e.preventDefault();
-    document.getElementById('my_modal_22').close();
-  }
+    document.getElementById("my_modal_22").close();
+  };
   return (
     <section>
       <h1 className="font-redblood text-center pt-3 text-2xl sm:text-4xl lg:text-4xl text-red-800">
@@ -130,10 +129,10 @@ const Homesection = () => {
         {featuredCard.map((card, idx) => (
           <div key={idx} className="border-gray-800 border-2 p-1 px-2">
             <img
-            onClick={()=>document.getElementById('my_modal_5').showModal()}
+              onClick={() => document.getElementById("my_modal_5").showModal()}
               src={card.thumbnail}
               className="w-[120px] lg:w-[150px] h-[70px] lg:h-[150px] object-cover"
-              alt='Category'
+              alt="Category"
             />
             <p className="text-center lg:text-xl text-xs font-terminalfont">
               {card.category}
@@ -161,7 +160,12 @@ const Homesection = () => {
                     className="w-[120px] h-[90px] lg:h-[110px] object-cover"
                   />
                   <div>
-                    <h3 onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-700 font-genuine font-semibold underline cursor-pointer">
+                    <h3
+                      onClick={() =>
+                        document.getElementById("my_modal_5").showModal()
+                      }
+                      className="text-blue-700 font-genuine font-semibold underline cursor-pointer"
+                    >
                       {video.title}
                     </h3>
                     <p className="text-gray-600">{video.description}</p>
@@ -177,7 +181,7 @@ const Homesection = () => {
                       ))}
                     </div>
                     <div className="text-xs text-gray-500 mt-1">
-                      Price: {video.uploaded}  Category:{" "}
+                      Price: {video.uploaded} Category:{" "}
                       <span className="text-gray-700">{video.category}</span>
                     </div>
                     <div className="text-xs text-gray-500">
@@ -198,7 +202,12 @@ const Homesection = () => {
                 </div>
               ))}
               <div className="flex justify-end pr-5">
-                <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-600 text-xs cursor-pointer underline">
+                <a
+                  onClick={() =>
+                    document.getElementById("my_modal_5").showModal()
+                  }
+                  className="text-blue-600 text-xs cursor-pointer underline"
+                >
                   See More Items
                 </a>
               </div>
@@ -212,46 +221,77 @@ const Homesection = () => {
           </TabPanel>
         </Tabs>
       </div>
-      
 
       <dialog id="my_modal_5" className="modal modal-middle sm:modal-middle">
         <div className="modal-box p-0 rounded-none border-2 relative border-white bg-gray-900">
-          <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF </h3>
-          <button type="button" onClick={()=>document.getElementById('my_modal_5').close()} className="absolute top-1 right-1 px-2 font-semibold">x</button>
-          <form  onSubmit={lastModal}>
+          <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">
+            IDENTIFY YOURSELF{" "}
+          </h3>
+          <button
+            type="button"
+            onClick={() => document.getElementById("my_modal_5").close()}
+            className="absolute top-1 right-1 px-2 font-semibold"
+          >
+            x
+          </button>
+          <form onSubmit={lastModal}>
             <div className="space-y-2 flex justify-center items-center flex-col mt-4">
-            <div>
-              <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
+              <div>
+                <img
+                  className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40"
+                  src={gif}
+                  alt=""
+                />
+              </div>
+              <p className=" rounded-none font-terminalfont text-gray-700 border-gray-700 border-2  text-sm w-8/12 text-center px-1">
+                USER LOGIN
+              </p>
+              <input
+                autoComplete="agent007"
+                type="password"
+                required
+                name="pass"
+                className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"
+                placeholder=" TYPE PASSCODE HERE"
+                id=""
+              />
             </div>
-            <p className=" rounded-none font-terminalfont text-gray-700 border-gray-700 border-2  text-sm w-8/12 text-center px-1">USER LOGIN</p>
-          <input autoComplete="agent007" type="password" required name="pass" className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSCODE HERE" id="" />
-          </div>
-          
-          <div className="modal-action mt-0 py-2  flex justify-center items-center">
-            
+
+            <div className="modal-action mt-0 py-2  flex justify-center items-center">
               {/* if there is a button in form, it will close the modal */}
-              <div ><button  className="btn btn-xs font-terminalfont rounded-none px-10 bg-red-600 text-white">LOGIN</button></div>
-            
-          </div>
+              <div>
+                <button className="btn btn-xs font-terminalfont rounded-none px-10 bg-red-600 text-white">
+                  LOGIN
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </dialog>
       <dialog id="my_modal_22" className="modal">
-  <div className="modal-box bg-gray-400 border-2 p-0 border-gray-300 rounded-none">
-    <h1 className="text-center bg-gray-800 font-terminalfont text-gray-400">System message</h1>
-    <h3 className="font-bold text-2xl flex items-center  py-3 text-gray-900 text-center font-primaryHack">
-      <img className="w-10 lg:w-16" src={cross} alt="" />
-      No match found for <span className="text-red-700 pl-2"> {secondpass}</span>
-    </h3>
-    {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
-    <div className="modal-action px-4 py-2">
-      <form onSubmit={submitlastModal} method="dialog ">
-        {/* if there is a button in form, it will close the modal */}
-        <button type="submit"  className="btn btn-xs rounded-none font-primaryHack px-3">Ok</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+        <div className="modal-box bg-gray-400 border-2 p-0 border-gray-300 rounded-none">
+          <h1 className="text-center bg-gray-800 font-terminalfont text-gray-400">
+            System message
+          </h1>
+          <h3 className="font-bold text-2xl flex items-center  py-3 text-gray-900 text-center font-primaryHack">
+            <img className="w-10 lg:w-16" src={cross} alt="" />
+            No match found for{" "}
+            <span className="text-red-700 pl-2"> {secondpass}</span>
+          </h3>
+          {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
+          <div className="modal-action px-4 py-2">
+            <form onSubmit={submitlastModal} method="dialog ">
+              {/* if there is a button in form, it will close the modal */}
+              <button
+                type="submit"
+                className="btn btn-xs rounded-none font-primaryHack px-3"
+              >
+                Ok
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
   );
 };
