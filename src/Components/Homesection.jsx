@@ -115,6 +115,11 @@ const Homesection = () => {
     document.getElementById('my_modal_22').showModal();
     document.getElementById('my_modal_5').close();
     e.target.reset();
+    // document.getElementById('my_modal_22').close()
+  }
+  const submitlastModal = e =>{
+    e.preventDefault();
+    document.getElementById('my_modal_22').close();
   }
   return (
     <section>
@@ -213,7 +218,7 @@ const Homesection = () => {
         <div className="modal-box p-0 rounded-none border-2 relative border-white bg-gray-900">
           <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF </h3>
           <button type="button" onClick={()=>document.getElementById('my_modal_5').close()} className="absolute top-1 right-1 px-2 font-semibold">x</button>
-          <form onChange={(e)=>setSecondpass(e.target.value)} onSubmit={lastModal}>
+          <form  onSubmit={lastModal}>
             <div className="space-y-2 flex justify-center items-center flex-col mt-4">
             <div>
               <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
@@ -240,9 +245,9 @@ const Homesection = () => {
     </h3>
     {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
     <div className="modal-action px-4 py-2">
-      <form method="dialog ">
+      <form onSubmit={submitlastModal} method="dialog ">
         {/* if there is a button in form, it will close the modal */}
-        <button type="submit" className="btn btn-xs rounded-none font-primaryHack px-3">Ok</button>
+        <button type="submit"  className="btn btn-xs rounded-none font-primaryHack px-3">Ok</button>
       </form>
     </div>
   </div>
