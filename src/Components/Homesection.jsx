@@ -209,7 +209,7 @@ const Homesection = () => {
               <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
             </div>
             <p className=" rounded-none font-terminalfont text-gray-700 border-gray-600 border-2 bg-gray-300 text-sm w-8/12 text-left px-1">USER</p>
-          <input type="password" required className="placeholder-gray-700 focus border-white border-2 w-8/12 mx-auto bg-gray-400 font-terminalfont text-sm px-2" placeholder=" TYPE PASSWORD HERE" id="" />
+          <input type="password" required className="placeholder-gray-700 border-white border-2 w-8/12 mx-auto bg-gray-400 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSWORD HERE" id="" />
           </div>
           
           <div className="modal-action mt-0 py-2  flex justify-center items-center">
