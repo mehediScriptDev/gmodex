@@ -141,7 +141,7 @@ const Girls = () => {
     <div>
       <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold  font-genuine">Available items</h2>
+          <h2 className="text-lg font-bold text-gray-600 font-genuine">Last Chance Picks</h2>
           <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-600 cursor-pointer text-xs underline">
             See More Videos
           </a>
