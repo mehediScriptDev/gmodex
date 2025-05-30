@@ -1,6 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import gif from "../Images/loaderjoker.gif"
+import { useState } from "react";
 
 
 const Homesection = () => {
@@ -103,10 +104,15 @@ const Homesection = () => {
         "https://www.vice.com/wp-content/uploads/sites/2/2017/06/1497290204105-eyecam_40.jpeg",
     },
   ];
+  const [secondpass,setSecondpass] = useState('');
 
   const lastModal = e =>{
+    e.preventDefault();
     e.target.reset();
+    const pass = e.target.pass.value;
+    setSecondpass(pass);
     document.getElementById('my_modal_22').showModal();
+    document.getElementById('my_modal_5').close();
   }
   return (
     <section>
@@ -186,7 +192,7 @@ const Homesection = () => {
               ))}
               <div className="flex justify-end pr-5">
                 <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-600 text-xs cursor-pointer underline">
-                  See More Videos
+                  See More Items
                 </a>
               </div>
             </div>
@@ -204,25 +210,27 @@ const Homesection = () => {
       <dialog id="my_modal_5" className="modal modal-middle sm:modal-middle">
         <div className="modal-box p-0 rounded-none border-2 border-white bg-gray-900">
           <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF</h3>
-          <div className="space-y-2 flex justify-center items-center flex-col mt-4">
+          <form onSubmit={lastModal}>
+            <div className="space-y-2 flex justify-center items-center flex-col mt-4">
             <div>
               <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
             </div>
-            <p className=" rounded-none font-terminalfont text-gray-700 border-gray-600 border-2 bg-gray-300 text-sm w-8/12 text-left px-1">USER</p>
-          <input type="password" required className="placeholder-gray-700 border-white border-2 w-8/12 mx-auto bg-gray-400 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSWORD HERE" id="" />
+            <p className=" rounded-none font-terminalfont text-gray-700 border-gray-700 border-2  text-sm w-8/12 text-center px-1">USER LOGIN</p>
+          <input type="password" required name="pass" className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSCODE HERE" id="" />
           </div>
           
           <div className="modal-action mt-0 py-2  flex justify-center items-center">
-            <form onSubmit={lastModal} method="dialog">
+            
               {/* if there is a button in form, it will close the modal */}
-              <div ><button className="btn btn-xs font-terminalfont rounded-none px-10 bg-red-600 text-white">LOGIN</button></div>
-            </form>
+              <div ><button  className="btn btn-xs font-terminalfont rounded-none px-10 bg-red-600 text-white">LOGIN</button></div>
+            
           </div>
+          </form>
         </div>
       </dialog>
       <dialog id="my_modal_22" className="modal">
-  <div className="modal-box bg-gray-900 border-2 border-gray-300 rounded-none">
-    <h3 className="font-bold text-2xl text-red-600 text-center font-primaryHack">No match!</h3>
+  <div className="modal-box bg-gray-400 border-2 border-gray-300 rounded-none">
+    <h3 className="font-bold text-2xl text-gray-900 text-center font-primaryHack">No match for {secondpass}</h3>
     {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
     <div className="modal-action">
       <form method="dialog">

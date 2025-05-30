@@ -39,7 +39,7 @@ const Girls = () => {
         "abuse",],
       uploader: "themack818",
       uploaded: "1 month ago",
-      category: "abuse",
+      category: "Lady",
       views: "36,00",
       rating: 4,
       ratingsCount: 300,
@@ -56,11 +56,11 @@ const Girls = () => {
         "girl",
         "deepWeb",
         "Lady",
-        "sex",
+        
         "abuse",],
       uploader: "themack818",
       uploaded: "1 month ago",
-      category: "abuse",
+      category: "Lady",
       views: "79,600",
       rating: 5,
       ratingsCount: 600,
@@ -77,11 +77,10 @@ const Girls = () => {
         "girl",
         "deepWeb",
         "Lady",
-        "sex",
-        "abuse",],
+        ],
       uploader: "themack818",
       uploaded: "1 month ago",
-      category: "sex",
+      category: "Girl",
       views: "80,602",
       rating: 5,
       ratingsCount: 300,
@@ -96,7 +95,7 @@ const Girls = () => {
       tags: ["12year", "child", "littlemaja", "cuteamerican", "abuse", "forced", "sex"],
       uploader: "themack818",
       uploaded: "1 month ago",
-      category: "abuse",
+      category: "child",
       views: "10,602",
       rating: 2,
       ratingsCount: 232,
@@ -111,7 +110,7 @@ const Girls = () => {
       tags: ["indian", "abuse", "southIndian", "Hotty", "Dirty", "sex"],
       uploader: "themack818",
       uploaded: "1 month ago",
-      category: "abuse",
+      category: "Indian",
       views: "40,000",
       rating: 5,
       ratingsCount: 400,
@@ -128,7 +127,7 @@ const Girls = () => {
     <div>
       <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold  font-genuine">Featured Videos</h2>
+          <h2 className="text-lg font-bold  font-genuine">Available items</h2>
           <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-600 cursor-pointer text-xs underline">
             See More Videos
           </a>
@@ -157,7 +156,7 @@ const Girls = () => {
                 ))}
               </div>
               <div className="text-xs text-gray-500 mt-1">
-                Added: {video.uploaded} in Category:{" "}
+               Category:{" "}
                 <span className="text-gray-700">{video.category}</span>
               </div>
               <div className="text-xs text-gray-500">
