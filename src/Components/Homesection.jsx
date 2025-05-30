@@ -108,11 +108,12 @@ const Homesection = () => {
 
   const lastModal = e =>{
     e.preventDefault();
-    e.target.reset();
+    
     const pass = e.target.pass.value;
     setSecondpass(pass);
     document.getElementById('my_modal_22').showModal();
     document.getElementById('my_modal_5').close();
+    e.target.reset();
   }
   return (
     <section>
@@ -210,13 +211,13 @@ const Homesection = () => {
       <dialog id="my_modal_5" className="modal modal-middle sm:modal-middle">
         <div className="modal-box p-0 rounded-none border-2 border-white bg-gray-900">
           <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF</h3>
-          <form onSubmit={lastModal}>
+          <form onChange={(e)=>setSecondpass(e.target.value)} onSubmit={lastModal}>
             <div className="space-y-2 flex justify-center items-center flex-col mt-4">
             <div>
               <img className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40" src={gif} alt="" />
             </div>
             <p className=" rounded-none font-terminalfont text-gray-700 border-gray-700 border-2  text-sm w-8/12 text-center px-1">USER LOGIN</p>
-          <input onChange={(e)=>setSecondpass(e.target.value)} type="password" required name="pass" className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSCODE HERE" id="" />
+          <input autoComplete="agent007" type="password" required name="pass" className="placeholder-gray-700 border-gray-400 border-2 w-8/12 mx-auto bg-gray-800 font-terminalfont text-sm px-2"  placeholder=" TYPE PASSCODE HERE" id="" />
           </div>
           
           <div className="modal-action mt-0 py-2  flex justify-center items-center">
@@ -230,7 +231,9 @@ const Homesection = () => {
       </dialog>
       <dialog id="my_modal_22" className="modal">
   <div className="modal-box bg-gray-400 border-2 border-gray-300 rounded-none">
-    <h3 className="font-bold text-2xl text-gray-900 text-center font-primaryHack">No match for {secondpass}</h3>
+    <h3 className="font-bold text-2xl text-gray-900 text-center font-primaryHack">
+      No match for <span className="text-red-700">{secondpass}</span>
+    </h3>
     {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
     <div className="modal-action">
       <form method="dialog">
