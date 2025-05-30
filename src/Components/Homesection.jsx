@@ -209,8 +209,9 @@ const Homesection = () => {
       
 
       <dialog id="my_modal_5" className="modal modal-middle sm:modal-middle">
-        <div className="modal-box p-0 rounded-none border-2 border-white bg-gray-900">
-          <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF</h3>
+        <div className="modal-box p-0 rounded-none border-2 relative border-white bg-gray-900">
+          <h3 className="font-bold text-lg text-center bg-gray-400 font-boldHack py-1">IDENTIFY YOURSELF </h3>
+          <button type="button" onClick={()=>document.getElementById('my_modal_5').close()} className="absolute top-1 right-1 px-2 font-semibold">x</button>
           <form onChange={(e)=>setSecondpass(e.target.value)} onSubmit={lastModal}>
             <div className="space-y-2 flex justify-center items-center flex-col mt-4">
             <div>
