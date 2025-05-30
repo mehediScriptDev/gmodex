@@ -2,6 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import gif from "../Images/loaderjoker.gif"
 import { useState } from "react";
+import cross from "../Images/cross.png"
 
 
 const Homesection = () => {
@@ -231,15 +232,17 @@ const Homesection = () => {
         </div>
       </dialog>
       <dialog id="my_modal_22" className="modal">
-  <div className="modal-box bg-gray-400 border-2 border-gray-300 rounded-none">
-    <h3 className="font-bold text-2xl text-gray-900 text-center font-primaryHack">
-      No match for <span className="text-red-700">{secondpass}</span>
+  <div className="modal-box bg-gray-400 border-2 p-0 border-gray-300 rounded-none">
+    <h1 className="text-center bg-gray-800 font-terminalfont text-gray-400">System message</h1>
+    <h3 className="font-bold text-2xl flex items-center  py-3 text-gray-900 text-center font-primaryHack">
+      <img className="w-10 lg:w-16" src={cross} alt="" />
+      No match found for <span className="text-red-700 pl-2"> {secondpass}</span>
     </h3>
     {/* <p className="py-2 text-gray-300 text-sm font-primaryHack text-center">We dont allow any outsider..</p> */}
-    <div className="modal-action">
-      <form method="dialog">
+    <div className="modal-action px-4 py-2">
+      <form method="dialog ">
         {/* if there is a button in form, it will close the modal */}
-        <button className="btn btn-xs rounded-none font-primaryHack">Close</button>
+        <button type="submit" className="btn btn-xs rounded-none font-primaryHack px-3">Ok</button>
       </form>
     </div>
   </div>
