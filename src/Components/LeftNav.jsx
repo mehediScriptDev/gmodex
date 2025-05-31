@@ -40,15 +40,15 @@ const LeftNav = () => {
       </li>
 
       <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
-        <Link to={"/shooter"}>Shooter</Link>
+        <Link to={"/hitman"}>Hitman</Link>
       </li>
 
       <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
-        <Link to={"/hitter"}>Hitter</Link>
+        <Link to={"/fraud"}>Financial</Link>
       </li>
 
       <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">
-        <Link to={"/kidappers"}>Kidnappers</Link>
+        <Link to={"/tools"}>Tools</Link>
       </li>
 
       <li className="hover:bg-gray-100 cursor-pointer px-4 py-2">

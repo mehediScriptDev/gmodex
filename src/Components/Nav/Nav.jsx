@@ -46,15 +46,15 @@ const Nav = () => {
       </li>
 
       <li>
-        <NavLink to={"/shooter"}>Shooter</NavLink>
+        <NavLink to={"/hitman"}>Hitman</NavLink>
       </li>
 
       <li>
-        <NavLink to={"/hitter"}>Hitter</NavLink>
+        <NavLink to={"/fraud"}>Financial</NavLink>
       </li>
 
       <li>
-        <NavLink to={"/kidappers"}>Kidnappers</NavLink>
+        <NavLink to={"/tools"}>Hacking</NavLink>
       </li>
 
       <li>

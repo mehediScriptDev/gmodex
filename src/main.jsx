@@ -8,6 +8,7 @@ import Error from "./Components/Error.jsx";
 import Girls from "./Components/Girls.jsx";
 import Homesection from "./Components/Homesection.jsx";
 import Guns from "./Components/Guns.jsx";
+import Drugs from "./Components/Drugs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/guns",
         element: <Guns></Guns>,
+      },
+      {
+        path: "/drugs",
+        element: <Drugs></Drugs>,
       },
     ],
   },
