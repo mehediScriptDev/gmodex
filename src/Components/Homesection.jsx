@@ -214,21 +214,7 @@ const Homesection = () => {
       thumbnail:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YEm1JdXa27LUIlXdiP2ZMuYUNCaQ5BWqVQ&s",
     },
-    {
-      title: "Rappey Virus",
-     
-      description:
-        "Not selly things. Real product.",
-      tags: ["virus", "deadii", "dangerous"],
-      uploader: "dr tesla",
-      
     
-      views: "1000$",
-      rating: 5,
-      ratingsCount: 103,
-      thumbnail:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmg7sbSTwao9wnhxWXCWdvgJh63YJdNGJ0FaIn0pxRREaWkxdbT5yjUsFo3mV9fMbxkk&usqp=CAU",
-    },
      {
       title: "The Satanic Rituals",
      
@@ -244,21 +230,7 @@ const Homesection = () => {
       thumbnail:
         "https://burnsiderarebooks.cdn.bibliopolis.com/pictures/140945112.jpg?auto=webp&v=1686348388",
     },
-    {
-      title: "The Satanic Bible",
-     
-      description:
-        "The real satanic bible. buy now",
-      tags: ["HailSaytan", "Bible", "666"],
-      uploader: "Emilia",
-      
     
-      views: "10$",
-      rating: 5,
-      ratingsCount: 997,
-      thumbnail:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAUB2mU1n_Vg3u8sohG9R5_nPHOhSzp8opO25qf5Krt1UjoSPjip7Go5khehT0VniPfzo&usqp=CAU",
-    },
     {
       title: "The Satanic Bible",
      
@@ -274,6 +246,120 @@ const Homesection = () => {
       thumbnail:
         "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1435430607i/82333.jpg",
     },
+  ]
+  const premium = [
+    {
+      title: "Zero-day exploits",
+     
+      description:
+        "No system is safe! believe it!!",
+      tags: ["vulsoftware",],
+      uploader: "gModex",
+      
+    
+      views: "1000000$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2BvBuno0VVhedbAkRldob9IqKpAkSjNFXQ&s",
+    },
+    {
+      title: "Highly customized hacking services",
+     
+      description:
+        "hacking into government databases, private corporate networks, or high-value ransomware attacks.",
+      tags: ["hack", "hacker", "moonshot"],
+      uploader: "elderson",
+      
+    
+      views: "10000$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZac138vNH_IppUEgdReYpAZ_mRivoGtoJFgyN9FgtW9FWmg2-JEqK4gfua2QAAMuU24&usqp=CAU",
+    },
+    {
+      title: "Hitman for hire",
+     
+      description:
+        "Contract k*lling of government figures only",
+      tags: ["hitman"],
+      uploader: "gModex",
+      
+    
+      views: "10000$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://i.pinimg.com/564x/f5/e9/da/f5e9dac15141ce4119a00dcad9b394b0.jpg",
+    },
+    {
+      title: "Rappey Virus",
+     
+      description:
+        "Not selly things. Real product.",
+      tags: ["virus", "deadii", "dangerous"],
+      uploader: "dr tesla",
+      
+    
+      views: "7000$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGmg7sbSTwao9wnhxWXCWdvgJh63YJdNGJ0FaIn0pxRREaWkxdbT5yjUsFo3mV9fMbxkk&usqp=CAU",
+    },
+    
+    
+    
+   
+    
+    {
+      title: "The real Satanic Bible",
+     
+      description:
+        "Worlds first satanic bible.",
+      tags: ["HailSaytan", "Bible", "666"],
+      uploader: "Emilia",
+      
+    
+      views: "1500$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAUB2mU1n_Vg3u8sohG9R5_nPHOhSzp8opO25qf5Krt1UjoSPjip7Go5khehT0VniPfzo&usqp=CAU",
+    },
+    {
+      title: "Fl67 CN",
+     
+      description:
+        "Australian Anti tank gun",
+      tags: ["defence", "tank", "safety"],
+      uploader: "Collbapat",
+      
+    
+      views: "900$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://www.defencetalk.com/wp-content/uploads/2011/11/carl-gustave-karl-gustav-84mm-launcher.jpg",
+    },
+    
+    {
+      title: "FN Herstal",
+     
+      description:
+        "Your mission friend. Buy now!",
+      tags: ["herstal", "highskillgun",],
+      uploader: "collbapat",
+      
+    
+      views: "700$",
+      rating: 0,
+      ratingsCount: 0,
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoqkG8_ErGHYYAQT76rbQkZqybtas-OIp5M-7cs_jg0TzxU6ZHlRqILEErVz70lBf__ek&usqp=CAU",
+    },
+    
   ]
   return (
     <section>
@@ -432,7 +518,67 @@ const Homesection = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 3</h2>
+            <div>
+              {premium.map((video, idx) => (
+                <div key={idx} className="flex gap-4 border-t py-4">
+                  <img
+                    src={video.thumbnail}
+                    alt={video.title}
+                    className="w-[120px] h-[90px] lg:h-[110px] object-cover"
+                  />
+                  <div>
+                    <h3
+                      onClick={() =>
+                        document.getElementById("my_modal_5").showModal()
+                      }
+                      className="text-blue-700 font-genuine font-semibold underline cursor-pointer"
+                    >
+                      {video.title}
+                    </h3>
+                    <p className="text-gray-600">{video.description}</p>
+                    <div className="flex flex-wrap gap-1 mt-1 text-xs">
+                      {video.tags.map((tag, index) => (
+                        <a
+                          key={index}
+                          href="#"
+                          className="text-blue-600 hover:underline"
+                        >
+                          {tag}
+                        </a>
+                      ))}
+                    </div>
+                    <div className="text-xs text-gray-500 mt-1">
+                      
+                      <span className="text-gray-700">{video.category}</span>
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      By:{" "}
+                      <span className="text-black font-medium">
+                        {video.uploader}
+                      </span>{" "}
+                      | Price: {video.views}
+                    </div>
+                    <div className="flex items-center gap-1 text-red-500 mt-1">
+                      {"★".repeat(video.rating)}
+                      {"☆".repeat(5 - video.rating)}
+                      <span className="text-black text-xs ml-2">
+                        {video.ratingsCount} ratings
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="flex justify-end pr-5">
+                <a
+                  onClick={() =>
+                    document.getElementById("my_modal_5").showModal()
+                  }
+                  className="text-blue-600 text-xs cursor-pointer underline"
+                >
+                  See More Items
+                </a>
+              </div>
+            </div>
           </TabPanel>
         </Tabs>
       </div>
