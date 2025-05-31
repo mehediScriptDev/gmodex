@@ -1,6 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import gif from "../Images/loaderjoker.gif";
+import gif from "../Images/owl.png";
 import { useState } from "react";
 import cross from "../Images/cross.png";
 
@@ -203,7 +203,7 @@ const Homesection = () => {
       title: "Bluster",
      
       description:
-        "Best thing for your work. Area: 2km",
+        "Best thing for your work. Area:2km",
       tags: ["Boo", "Babye", "moonshot"],
       uploader: "rouby",
       
@@ -453,7 +453,7 @@ const Homesection = () => {
             <div className="space-y-2 flex justify-center items-center flex-col mt-4">
               <div>
                 <img
-                  className="rounded-full object-cover lg:w-40 w-28 h-28 border-2 border-white lg:h-40"
+                  className="rounded-full object-cover lg:w-40 w-28 h-28  lg:h-40"
                   src={gif}
                   alt=""
                 />
