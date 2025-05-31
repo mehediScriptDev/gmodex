@@ -199,7 +199,7 @@ const Guns = () => {
               onClick={() => document.getElementById("my_modal_5").showModal()}
               className="text-blue-600 cursor-pointer text-xs underline"
             >
-              See More Videos
+              See More Items
             </a>
           </div>
           {videos.map((video, idx) => (

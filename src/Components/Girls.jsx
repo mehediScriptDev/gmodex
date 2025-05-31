@@ -143,7 +143,7 @@ const Girls = () => {
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold text-gray-600 font-genuine">Last Chance Picks</h2>
           <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="text-blue-600 cursor-pointer text-xs underline">
-            See More Videos
+            See More Girls
           </a>
         </div>
         {videos.map((video, idx) => (
