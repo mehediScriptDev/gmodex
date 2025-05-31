@@ -1,6 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import gif from "../Images/owl.png";
+import gif from "../Images/loaderjoker.gif";
 import { useState } from "react";
 import cross from "../Images/cross.png";
 
