@@ -124,6 +124,7 @@ const Drugs = () => {
      };
     return (
         <div>
+            <h1 className="font-redblood text-center  text-2xl sm:text-4xl lg:text-4xl text-red-800 py-5">Life yours so as choice</h1>
             <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold text-gray-600 font-genuine">Only few left</h2>
