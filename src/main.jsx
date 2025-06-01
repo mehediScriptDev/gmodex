@@ -13,6 +13,7 @@ import Crypto from "./Components/Crypto.jsx";
 import Hitman from "./Components/Hitman.jsx";
 import Financial from "./Components/Financial.jsx";
 import Hacking from "./Components/Hacking.jsx";
+import Organs from "./Components/Organs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/tools",
         element: <Hacking></Hacking>,
+      },
+      {
+        path: "/organs",
+        element: <Organs></Organs>,
       },
     ],
   },
