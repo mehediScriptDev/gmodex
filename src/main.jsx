@@ -10,6 +10,7 @@ import Homesection from "./Components/Homesection.jsx";
 import Guns from "./Components/Guns.jsx";
 import Drugs from "./Components/Drugs.jsx";
 import Crypto from "./Components/Crypto.jsx";
+import Hitman from "./Components/Hitman.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/crypto",
         element: <Crypto></Crypto>,
+      },
+      {
+        path: "/hitman",
+        element: <Hitman></Hitman>,
       },
     ],
   },
