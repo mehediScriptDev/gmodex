@@ -10,8 +10,8 @@ const firebaseConfig = {
   apiKey: ,
   authDomain: ,
   projectId: ,
-  storageBucket: "gmodex-agent007.firebasestorage.app",
-  messagingSenderId: "326638406182",
+  storageBucket: ,
+  messagingSenderId: ,
   appId: ,
   measurementId: 
 };
