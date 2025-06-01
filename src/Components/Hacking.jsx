@@ -113,7 +113,20 @@ const Hacking = () => {
   "ratingsCount": 310,
   "views": "$800",
   "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRrQznm-UkprmCc6Dv2yaqPptOQlR6I_Cmw&s"
+},
+   {
+  "title": "Dridex",
+  "description": "Available for purchase, price higher than others due to exclusivity.",
+  "tags": ["banking trojan", "malware", "exclusive"],
+  "uploader": "NetStormX",
+  "category": "Banking Trojans",
+  "views": "800$",
+  "rating": 5,
+  "ratingsCount": 310,
+  
+  "thumbnail": "https://www.knowbe4.com/hubfs/DRIDEX.jpg"
 }
+
 
 
 ,
@@ -156,7 +169,7 @@ const Hacking = () => {
       <div className="overflow-y-hidden mx-auto bg-white text-sm border border-gray-300 p-4">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold text-gray-600 font-genuine">
-            Available for work
+           Hot deals
           </h2>
           <a
             onClick={() => document.getElementById("my_modal_5").showModal()}
