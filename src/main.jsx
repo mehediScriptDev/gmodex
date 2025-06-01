@@ -11,6 +11,7 @@ import Guns from "./Components/Guns.jsx";
 import Drugs from "./Components/Drugs.jsx";
 import Crypto from "./Components/Crypto.jsx";
 import Hitman from "./Components/Hitman.jsx";
+import Financial from "./Components/Financial.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/hitman",
         element: <Hitman></Hitman>,
+      },
+      {
+        path: "/fraud",
+        element: <Financial></Financial>,
       },
     ],
   },
