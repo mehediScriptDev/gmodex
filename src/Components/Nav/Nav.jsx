@@ -75,7 +75,7 @@ const Nav = () => {
         <div>
           <ul
             className="flex
-             gap-2 font-semibold text-gray-400"
+             gap-2 font-semibold text-xs lg:text-sm sm:text-sm text-gray-400"
           >
             <li>
               <a onClick={()=>document.getElementById('my_modal_5').showModal()} className="cursor-pointer font-genuine">My Account</a>
